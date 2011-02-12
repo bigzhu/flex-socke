@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TabNavigator xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				 xmlns:s="library://ns.adobe.com/flex/spark" 
+				 xmlns:mx="library://ns.adobe.com/flex/mx"
+				 xmlns:ns="big_component.*" >
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			override protected function measure():void{}; 
+		]]>
+	</fx:Script>
+	<mx:Form label="终端形象" width="100%" height="100%">
+		<mx:FormItem label="店铺位置">
+			<ns:ComplexRetail id="id_dianPuWeiZhi" />
+		</mx:FormItem>
+		<mx:FormItem label="店铺类型">
+			<ns:ComplexRetail id="id_dianPuLeiXing" />
+		</mx:FormItem>
+		<mx:FormItem label="订货渠道">
+			<ns:ComplexRetail id="id_dingHuoQuDao" />
+		</mx:FormItem>	
+		
+		<mx:FormItem label="柜台形式">
+			<ns:ComplexRetail id="id_guiTaiXingShi" />
+		</mx:FormItem>
+		<mx:FormItem label="经营面积">	
+			<ns:ComplexRetail id="id_jingYingMianJi" width="100%" height="100%"/>
+		</mx:FormItem>	
+		
+		<mx:FormItem label="营业时长">
+			<ns:ComplexRetail id="id_yingYeShiChang" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="店铺形象">
+			<ns:ComplexRetail id="id_dianPuXingXiang" width="100%" height="100%"/>
+		</mx:FormItem>
+		
+		
+	</mx:Form>
+	
+	<mx:Form label="资金实力" width="100%" height="100%">
+		<mx:FormItem label="家庭主要收入来源">
+			<ns:ComplexRetail id="id_jiaTIngZhuYaoShouRuLaiYuan" />
+		</mx:FormItem>
+		<mx:FormItem label="店铺盈利">
+			<ns:ComplexRetail id="id_dianPuYingLi" />
+		</mx:FormItem>
+		<mx:FormItem label="周转资金">
+			<ns:ComplexRetail id="id_zhouZhuanZiJin" />
+		</mx:FormItem>
+	</mx:Form>
+	
+	<mx:Form label="配合度" width="100%" height="100%">
+		<mx:FormItem label="法人姓名">
+			<ns:ComplexRetail id="id_faRenXingMing" />
+		</mx:FormItem>
+		<mx:FormItem label="法人职业">
+			<ns:ComplexRetail id="id_faRenZhiYe" />
+		</mx:FormItem>
+		<mx:FormItem label="经营者数量">	
+			<ns:ComplexRetail id="id_jingYingZheShuLinag" width="100%" height="100%"/>
+		</mx:FormItem>	
+		<mx:FormItem label="主要经营者年龄">
+			<ns:ComplexRetail id="id_zhuYaoJingYingZheNianLin" width="100%" height="100%"/>
+		</mx:FormItem>
+		
+		<mx:FormItem label="主要经营者受教育程度">
+			<ns:ComplexRetail id="id_zhuYaoJingYingZheJiaoYuChengDu" />
+		</mx:FormItem>
+		<mx:FormItem label="经营动机">
+			<ns:ComplexRetail id="id_jingYingDongJi" />
+		</mx:FormItem>
+		<mx:FormItem label="品牌偏好">
+			<ns:ComplexRetail id="id_pinPaiPianHao" />
+		</mx:FormItem>
+		<mx:FormItem label="满意度">
+			<ns:ComplexRetail id="id_manYiDu" />
+		</mx:FormItem>
+		<mx:FormItem label="客户诉求">
+			<ns:ComplexRetail id="id_keHuSuQiu" />
+		</mx:FormItem>
+		
+		<mx:FormItem label="客户经理服务执行情况">
+			<ns:ComplexRetail id="id_keHuJingLiFuWuZhiXingQingKuang" width="100%" height="100%"/>
+		</mx:FormItem>
+	</mx:Form >
+	
+	<mx:Form  label="销售能力" width="100%" height="100%">
+		<mx:FormItem label="推荐能力">
+			<ns:ComplexRetail id="id_tuiJianNengLi" />
+		</mx:FormItem>
+		
+		<mx:FormItem label="库存管理能力">
+			<ns:ComplexRetail id="id_kuCunGuanLiNengLi" width="100%" height="100%"/>
+		</mx:FormItem>
+		
+		<mx:FormItem label="财务能力">
+			<ns:ComplexRetail id="id_caiWuNengLi" />
+		</mx:FormItem>
+		<mx:FormItem label="产品组合能力">
+			<ns:ComplexRetail id="id_chanPinZuHeNengLi" />
+		</mx:FormItem>
+		<mx:FormItem label="月均销量">
+			<ns:ComplexRetail id="id_yueJunXiaoShouLiang" />
+		</mx:FormItem>
+		<mx:FormItem label="单条值">
+			<ns:ComplexRetail id="id_danTiaoZhi" />
+		</mx:FormItem>
+		<!--
+		<mx:FormItem label="销售额">
+			<ns:ComplexRetail id="id_xiaoShouE" />
+		</mx:FormItem>
+		-->
+		<mx:FormItem label="经营利润">
+			<ns:ComplexRetail id="id_jingYingLiRun" width="100%" height="100%"/>
+		</mx:FormItem>
+	</mx:Form>
+</mx:TabNavigator >

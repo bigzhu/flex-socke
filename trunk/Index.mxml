@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bigzhu:Bigzhu xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:bigzhu="bigzhu.*"
+			   xmlns:big_component="big_component.*"
+			   xmlns:mx="library://ns.adobe.com/flex/mx">
+	<bigzhu:layout>
+		<s:BasicLayout/>
+	</bigzhu:layout>
+	<fx:Style source="Index.css"/>
+		<s:SkinnableContainer skinClass="skins.CustomSkinnableContainerSkin"  width="100%" height="48">
+			<s:HGroup>
+				
+			<mx:Image id="id_connet_status_image" source="icon/status/error.png"/>
+			</s:HGroup>
+		</s:SkinnableContainer>
+		
+	<mx:ViewStack id="id_top_stack" creationPolicy="all" height="100%" width="100%">
+		<!--登录-->
+		<s:NavigatorContent id="id_nav_login"  horizontalCenter="0" verticalCenter="0">
+			<big_component:Login id="id_login_big" horizontalCenter="0" verticalCenter="0"/>
+		</s:NavigatorContent>
+		
+	</mx:ViewStack>
+</bigzhu:Bigzhu>

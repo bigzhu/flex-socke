@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Form xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%">
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<mx:TabNavigator width="100%" height="100%">
+		<s:NavigatorContent label="消费群体构成" >	
+			<s:VGroup>
+				
+				
+				<mx:FormItem label="职业构成">
+					
+				</mx:FormItem>
+				<mx:FormItem label="年龄构成">
+					
+				</mx:FormItem>
+				<mx:FormItem label="稳定度">
+					
+				</mx:FormItem>
+				<mx:FormItem label="消费数量">
+					
+				</mx:FormItem>
+				<mx:FormItem label="结构">
+					
+				</mx:FormItem>
+				<mx:FormItem label="种类">
+					
+				</mx:FormItem>
+				<mx:FormItem label="消费能力">
+					
+				</mx:FormItem>
+			</s:VGroup>
+		</s:NavigatorContent>
+		<s:NavigatorContent label="消费群体基本信息">
+			
+			
+			<s:VGroup>
+				<mx:FormItem label="消费动机">
+					
+				</mx:FormItem>
+				<mx:FormItem label="品吸偏好">
+					
+				</mx:FormItem>
+				<mx:FormItem label="品牌偏好">
+					
+				</mx:FormItem>
+				<mx:FormItem label="需求层次">
+					
+				</mx:FormItem>
+				<mx:FormItem label="购买习惯（途径和数量）">
+					
+				</mx:FormItem>
+			</s:VGroup>	
+		</s:NavigatorContent>
+	</mx:TabNavigator>
+</mx:Form>

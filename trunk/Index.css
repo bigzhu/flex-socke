@@ -1,0 +1,13 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+
+
+global
+{
+	color: #000000;
+	font-weight: normal;
+	font-family: "中易宋体";
+	font-size: 15;
+}
+	

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:flexlib="http://code.google.com/p/flexlib/"
+			   xmlns:mx="library://ns.adobe.com/flex/mx"  width="500" height="500" title="添加或者移除角色权限" close="close()">
+	<fx:Script>
+		<![CDATA[
+			import mx.managers.PopUpManager;
+			private function close():void   
+			{
+				PopUpManager.removePopUp(this);   
+			}
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>	
+	<mx:Panel height="100%" width="100%" title="提示：可双击添加或删除权限，也可以使用中间的按钮添加或删除"
+			  paddingTop="10" paddingLeft="10" paddingRight="10" paddingBottom="10">	
+		<mx:DividedBox direction="horizontal" width="100%" height="100%" >
+
+			<mx:DataGrid id="id_has_privilege" width="42%" height="100%" styleName="DataGrid" doubleClickEnabled ="true">
+				<mx:columns>
+					<mx:DataGridColumn dataField="privilege" headerText="已有权限" />
+				</mx:columns>
+			</mx:DataGrid>
+			
+			<mx:FormItem  width="20%">
+				<flexlib:CanvasButton id="id_remove" useHandCursor="true" buttonMode="true" >
+					<mx:Image source="images/right.png" width="40" height="40" />		
+				</flexlib:CanvasButton>
+				<flexlib:CanvasButton id="id_add" useHandCursor="true" buttonMode="true" >
+					<mx:Image source="images/left.png" width="40" height="40" />	
+				</flexlib:CanvasButton>
+			</mx:FormItem>
+			
+			<mx:DataGrid id="id_not_have_privilege" width="43%" height="100%" styleName="DataGrid" doubleClickEnabled ="true">
+				<mx:columns>
+					<mx:DataGridColumn dataField="privilege" headerText="未有权限"/>
+				</mx:columns>
+			</mx:DataGrid>
+			
+		</mx:DividedBox>
+		<mx:Text text="说明:(分类)标记的权限，只起到将左边权限树节点分类的作用"/>
+	</mx:Panel>
+</s:TitleWindow>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" height="100%" width="95%">
+	<fx:Script>
+		<![CDATA[
+//			import bigzhu.myClasses.InvoiceManagerFacade;
+//			
+//			import mx.collections.ArrayCollection;
+//			
+//			[Bindable]
+//			public var cc:ContextMenu = new ContextMenu();
+//			public var rightSelect:Number;
+//			public var facade:InvoiceManagerFacade = InvoiceManagerFacade.getInstance(); 
+//			protected function idTreeFilter():void
+//			{
+//				var object:Object=new Object();
+//				object.viewComponent=this;
+//				object.name="StaffManage";
+//				object.next="";
+//				facade.sendNotification(InvoiceManagerFacade.FILTER_STAFF_TREE,object);	
+//			}
+//			protected function treeNext():void
+//			{
+//				var object:Object=new Object();
+//				object.viewComponent=this;
+//				object.name="StaffManage";
+//				object.next="next";
+//				facade.sendNotification(InvoiceManagerFacade.FILTER_STAFF_TREE,object);									
+//			}
+			
+		]]>
+	</fx:Script>
+	
+	<mx:Panel title="添加工号时，请选择该工号所属的机构；修改或删除工号时，请选择相应的工号。选择后鼠标右击选择调整方式" height="100%" width="100%" fontSize="12" >
+		<mx:VBox width="100%" height="100%" >
+		<mx:HBox width="100%"  >
+			<mx:Text text="工号：" />
+			<mx:TextInput id="id_staff_id" />
+			<mx:Text text="名字：" />
+			<mx:TextInput id="id_staff_name"  />
+			<mx:Button label="下一个" id="id_next"/>		
+		</mx:HBox>
+		
+		<mx:Tree id="id_org_tree" width="100%" height="100%"/>
+			
+		</mx:VBox>
+	</mx:Panel>
+	
+</s:Group>
