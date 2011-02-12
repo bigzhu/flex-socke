@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:NavigatorContent xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					xmlns:s="library://ns.adobe.com/flex/spark" 
+					xmlns:mx="library://ns.adobe.com/flex/mx"
+					xmlns:flexlib="http://code.google.com/p/flexlib/" >
+	<s:layout>
+		<s:BasicLayout/>
+	</s:layout>
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			
+		]]>
+	</fx:Script>
+	<s:VGroup width="100%" height="100%" >
+		<mx:VBox >  
+			<mx:HBox>
+				<mx:Text text="区域/客户经理/零售点"/>
+				<s:TextInput id="id_retail_id" editable="false"/>	
+				<mx:Button id="id_select" label="选择" />
+			</mx:HBox>
+			<!--
+			<mx:HBox>
+				<mx:FormItem label="起始时间:">
+					
+					<mx:DateField id="id_begin_date" yearNavigationEnabled="true" 
+								  formatString="YYYY/MM/DD" showToday="true"/> 
+				</mx:FormItem>
+				<mx:FormItem label="终止时间:">
+					<mx:DateField id="id_end_date"  yearNavigationEnabled="true" 
+								  formatString="YYYY/MM/DD"/>
+				</mx:FormItem>
+			</mx:HBox>				
+			-->
+		</mx:VBox> 
+		
+		<mx:HBox width="100%" height="5%">
+			<flexlib:CanvasButton id="id_query" useHandCursor="true" buttonMode="true" >
+				<mx:HBox  paddingLeft="5" paddingTop="1">
+					<mx:Image source="images/find.png" />
+					<mx:Label text="查询" /> 
+				</mx:HBox>	
+			</flexlib:CanvasButton>
+			
+			<flexlib:CanvasButton id="idExport" useHandCursor="true" buttonMode="true" >
+				<mx:HBox  paddingLeft="5" paddingTop="1">
+					<mx:Image source="images/excel.png" />
+					<mx:Label text="导出" /> 
+				</mx:HBox>	
+			</flexlib:CanvasButton>
+		</mx:HBox>
+		
+		
+		<mx:DataGrid id="id_data_grid" width="100%"  height="80%"  variableRowHeight="true"  horizontalGridLines="true"  horizontalGridLineColor="#708090">
+			<mx:columns>
+				<mx:DataGridColumn dataField="id" headerText="许可证号"  />
+				<mx:DataGridColumn dataField="org_name" headerText="零售点名字"  />
+				<mx:DataGridColumn dataField="juan_score" headerText="卷烟消费环境信息"  />
+				<mx:DataGridColumn dataField="zhong_score" headerText="终端形象"  />
+				<mx:DataGridColumn dataField="zi_score" headerText="资金实力"  />
+				<mx:DataGridColumn dataField="pei_score" headerText="配合度"  />
+				<mx:DataGridColumn dataField="xiao_score" headerText="销售能力"  />
+
+			</mx:columns>
+			
+		</mx:DataGrid>
+		<mx:HBox width="100%"  horizontalAlign="right" >
+			<mx:Text text="总记录数：" />	
+			<mx:Text id="total" />	
+		</mx:HBox>
+	</s:VGroup>
+	
+</s:NavigatorContent>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TabNavigator xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				 xmlns:s="library://ns.adobe.com/flex/spark" 
+				 xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%" xmlns:ns="big_component.*">
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			override protected function measure():void{}; 
+		]]>
+	</fx:Script>
+	
+	<mx:Form label="地域环境信息" width="100%" height="100%">
+		
+		<mx:FormItem label="守法环境">
+			<ns:ComplexRetail id="id_shouFaHuanJing" width="100%" height="100%"/>
+		</mx:FormItem>
+		
+		<mx:FormItem label="投资环境">
+			<ns:ComplexRetail id="id_touZiHuanJing" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="经济发展预期">	
+			<ns:ComplexRetail id="id_jingJiFaZhanYuQi" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="消费意识">
+			<ns:ComplexRetail id="id_xiaoFeiYiShi" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="开放程度">
+			<ns:ComplexRetail id="id_kaiFangChenDu" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="消费能力">
+			<ns:ComplexRetail id="id_xiaoFeiNengLi" width="100%" height="100%"/>
+		</mx:FormItem>	
+		<mx:FormItem label="地理环境">
+			<ns:ComplexRetail id="id_diLiHuanJing" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="少数民族文化">
+			<ns:ComplexRetail id="id_shaoShuMingZuWenHua" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="特殊风俗习惯">
+			<ns:ComplexRetail id="id_teShuFengShuXiGuan" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="主要经济支柱">
+			<ns:ComplexRetail id="id_zhuYaoJingJiZhiZhu" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="消费偏好">
+			<ns:ComplexRetail id="id_xiaoFeiPianHao" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="重点销售季节">
+			<ns:ComplexRetail id="id_zhongDianxiaoShouJiJie" width="100%" height="100%"/>
+		</mx:FormItem>
+		
+	</mx:Form>
+	
+	<s:NavigatorContent label="地理位置" width="100%" height="100%">
+		<mx:Form>
+			<mx:FormItem label="店铺区域">
+				<ns:ComplexRetail id="id_dianPuQuYu" width="100%" height="100%"/>
+			</mx:FormItem>
+		</mx:Form>
+		<!--
+		<s:Panel title="店铺区域">
+		<s:HGroup>
+		<s:Panel title="一类(80分)">
+		<s:VGroup left="10" right="10" top="10" bottom="10" >
+		<s:RadioButton groupName="qu_yu" label="商业正街" />
+		<s:RadioButton groupName="qu_yu" label="集贸市场" />
+		<s:RadioButton groupName="qu_yu" label="娱乐场所A" />
+		<s:RadioButton groupName="qu_yu" label="工矿区"/>
+		<s:RadioButton groupName="qu_yu" label="生活小区A"/>
+		</s:VGroup>
+		</s:Panel>
+		<s:Panel title="二类(60分)">
+		<s:VGroup left="10" right="10" top="10" bottom="10" >
+		<s:RadioButton groupName="qu_yu" label="镇区" />
+		<s:RadioButton groupName="qu_yu" label="口岸及主要交通干道" />
+		</s:VGroup>
+		</s:Panel>
+		<s:Panel title="三类(40分)">
+		<s:VGroup left="10" right="10" top="10" bottom="10" >
+		<s:RadioButton groupName="qu_yu" label="娱乐场所B" />
+		<s:RadioButton groupName="qu_yu" label="生活小区B" />
+		<s:RadioButton groupName="qu_yu" label="小巷" />
+		<s:RadioButton groupName="qu_yu" label="村寨" />
+		</s:VGroup>
+		</s:Panel>
+		</s:HGroup>
+		</s:Panel>	
+		-->
+	</s:NavigatorContent>
+	
+	<mx:Form label="卷烟消费环境信息" width="100%" height="100%">
+		<mx:FormItem label="消费者数量">
+			<ns:ComplexRetail id="id_xiaoFeiZheShuLiang" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="固定消费者数量">
+			<ns:ComplexRetail id="id_guDingXiaoFeiZheShuLiang" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="年龄构成">
+			<ns:ComplexRetail id="id_nianLingGouChen" width="100%" height="100%"/>
+		</mx:FormItem>
+		<mx:FormItem label="商圈消费数量">
+			<ns:ComplexRetail id="id_shanQuanXiaoFeiShuLiang" width="100%" height="100%"/>
+		</mx:FormItem>	
+		<mx:FormItem label="商圈消费结构">
+			<ns:ComplexRetail id="id_shanQuanXiaoFeiJieGou" width="100%" height="100%"/>
+		</mx:FormItem>	
+		<mx:FormItem label="收入水平">
+			<ns:ComplexRetail id="id_shouRuShuiPing"/>
+		</mx:FormItem>	
+		<mx:FormItem label="消费者职业构成">
+			<ns:ComplexRetail id="id_xiaoFeiZheZhiYeGouChen" width="100%" height="100%"/>
+		</mx:FormItem>	
+		<mx:FormItem label="消费动机">
+			<ns:ComplexRetail id="id_xiaoFeiDongJi"/>
+		</mx:FormItem>	
+		<mx:FormItem label="品吸偏好">
+			<ns:ComplexRetail id="id_pinXiPiaoHao"/>
+		</mx:FormItem>	
+		<mx:FormItem label="品牌偏好">
+			<ns:ComplexRetail id="id_pinPaiPianHao"/>
+		</mx:FormItem>	
+		
+		<s:Panel title="购买习惯">
+			<mx:Form>
+				
+				<mx:FormItem label="宣传渠道">
+					<ns:ComplexRetail id="id_xuanChuangQuDao"/>
+				</mx:FormItem>	
+				<mx:FormItem label="提升结构">
+					<ns:ComplexRetail id="id_TiShenJieGou"/>
+				</mx:FormItem>	
+				<mx:FormItem label="购买地点">
+					<ns:ComplexRetail id="id_gouMaiDiDian"/>
+				</mx:FormItem>	
+				<mx:FormItem label="购买地点影响因素">
+					<ns:ComplexRetail id="id_gouMaiDiYingXiangYinSu"/>
+				</mx:FormItem>	
+			</mx:Form>
+		</s:Panel>
+	</mx:Form>
+</mx:TabNavigator >

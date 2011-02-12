@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:big_component="big_component.*"
+			   xmlns:flexlib="http://code.google.com/p/flexlib/"
+			   xmlns:mx="library://ns.adobe.com/flex/mx" 
+			   creationComplete='init()' xmlns:layout="flexlib.scheduling.scheduleClasses.layout.*"
+			   >
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import bigzhu_old.BigClass;
+			import bigzhu_old.BigMain;
+			public function init():void
+			{
+				BigClass.crm=this;
+				BigMain.startup();
+			}
+			override protected function measure():void{};
+			public function edite():void
+			{
+				var obj:Object=can_change.selection.value;
+				if(can_change.selection.value==false)
+				{
+					BigMain.i_BigBusiness.able_all(false)	;
+					BigMain.i_BigShop.able_all(false)	;
+				}
+				else
+				{
+					BigMain.i_BigBusiness.able_all(true);	
+					BigMain.i_BigShop.able_all(true)	;
+				}
+				
+			}
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<s:RadioButtonGroup id="can_change" />
+	</fx:Declarations>
+	<mx:ViewStack id="id_top_stack" creationPolicy="all" height="100%" width="100%">
+		<!--登录-->
+		<s:NavigatorContent id="id_nav_login"  horizontalCenter="0" verticalCenter="0">
+			<big_component:Login id="id_login" horizontalCenter="0" verticalCenter="0"/>
+		</s:NavigatorContent>
+		<!--主界面-->
+		<s:NavigatorContent id="id_nav_main" width="100%" height="100%">
+			<mx:HDividedBox width="100%" height="100%">
+				<mx:Tree  id="id_privilge" borderVisible="false" labelField="权限"  width="18%" height="100%"/>
+				<mx:VDividedBox width="100%" height="100%">
+					<!--员工信息-->
+					<mx:HBox width="100%">
+						<flexlib:CanvasButton id="id_staff_info" useHandCursor="true" buttonMode="true" >
+							<mx:Image source="images/hello.png" />
+						</flexlib:CanvasButton>		
+						<s:VGroup>
+							<mx:Text fontSize="16" id="id_welcome"/>
+							<s:HGroup>
+								<mx:Text text="客户资料卡:"/>
+								
+								<s:RadioButton label="不可修改" selected="true" value="false" groupName="can_change" click="edite()"/>
+								<s:RadioButton label="可修改" value="ture" groupName="can_change" click="edite()"/>
+							</s:HGroup>
+						</s:VGroup>
+						
+						<mx:Button id="id_login_out" label="退出"/>
+					</mx:HBox>
+					<!--功能界面-->
+					<big_component:MainView id="id_main_view"  width="100%" height="100%" />
+				</mx:VDividedBox>
+			</mx:HDividedBox>
+		</s:NavigatorContent>
+	</mx:ViewStack>
+</s:Application>

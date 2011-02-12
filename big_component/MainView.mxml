@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:ViewStack xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			  xmlns:s="library://ns.adobe.com/flex/spark" 
+			  xmlns:mx="library://ns.adobe.com/flex/mx" 
+			  xmlns:big_component="big_component.*" >
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<!--角色管理-->
+	<s:NavigatorContent id="id_nav_role">
+		<big_component:Role id="id_role"/>
+	</s:NavigatorContent>
+	<!--工号管理-->
+	<s:NavigatorContent id="id_nav_staff">
+		<big_component:Staff id="id_staff"/>
+	</s:NavigatorContent>
+	<!--机构管理-->
+	<s:NavigatorContent id="id_nav_org">
+		<big_component:Org id="id_org"/>
+	</s:NavigatorContent>
+	<!--零售店管理-->
+	<s:NavigatorContent id="id_nav_retail" width="100%" height="100%">
+		<big_component:Retail id="id_retail" width="100%" height="100%"/>
+	</s:NavigatorContent>
+	<!--报表-->
+	<s:NavigatorContent id="id_nav_report" width="100%" height="100%">
+		<big_component:Report id="id_report" width="100%" height="100%"/>
+	</s:NavigatorContent>
+</mx:ViewStack>

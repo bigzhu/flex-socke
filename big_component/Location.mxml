@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Form xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%">
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			public function showSliderTip(item:Object):String
+			{
+				if(item==0)
+					return '差';
+				else if(item==20)
+					return '较差';
+				else if(item==40)
+					return '中';
+				else if(item==60)
+					return '较好';
+				else if(item==80)
+					return '好';
+				else if(item==100)
+					return '绝佳';
+				else
+					return '未知值';
+				return 'bigzhu';
+			}
+		]]>
+	</fx:Script>
+	<mx:TabNavigator width="100%" height="100%">
+		<s:NavigatorContent id="id_nav" label='地理环境'>
+			<s:VGroup left="10" right="10" top="10" bottom="10" >
+				<s:RadioButton groupName="di_li" label="城区" />
+				<s:RadioButton groupName="di_li" label="镇区" />
+				<s:RadioButton groupName="di_li" label="城乡结合部" />
+				<s:RadioButton groupName="di_li" label="乡村(坝区)"/>
+				<s:RadioButton groupName="di_li" label="乡村(山区)"/>
+			</s:VGroup>
+		</s:NavigatorContent>
+		
+		<s:NavigatorContent label="人文环境">
+			<s:VGroup>	
+				<mx:FormItem label="教育程度">
+					<mx:HSlider maximum="100" minimum="20"
+								width="480"  snapInterval="20" labels="[初中（以下）,高中（中专、高职）,大专,本科,研究生（以上）]"/>
+				</mx:FormItem>
+				<mx:FormItem label="开放程度">
+					<mx:HSlider maximum="100" minimum="10"
+								width="480"  snapInterval="10" labels="[10分,20分,30分,40分,50分,60分,70分,80分,90分,100分]"/>					
+				</mx:FormItem>
+				<mx:FormItem label="少数民族文化">
+					<s:TextArea id="id_ming_zu_wen_hua"/>
+				</mx:FormItem>
+				<mx:FormItem label="特殊风俗习惯">
+					<s:TextArea id="id_feng_su_xi_guang"/>
+				</mx:FormItem>
+			</s:VGroup>
+		</s:NavigatorContent>
+		<s:NavigatorContent label="政治经济环境">		
+			<s:VGroup>
+				<mx:FormItem label="守法环境">
+					<mx:HSlider maximum="100" minimum="20"
+								width="160"  snapInterval="20" labels="[差,较差,中,较好,好]"/>
+				</mx:FormItem>
+				
+				<mx:FormItem label="投资环境">	
+					<mx:HSlider maximum="100" minimum="20"
+								width="160"  snapInterval="20" labels="[差,较差,中,较好,好]"/>
+				</mx:FormItem>
+				<mx:FormItem label="消费意识">
+					<mx:HSlider maximum="100" minimum="25"
+								width="160"  snapInterval="25" labels="[淡薄,一般,较好,强烈]"/>
+				</mx:FormItem>
+				<mx:FormItem label="经济发展前景">	
+					<mx:HSlider maximum="100" minimum="0"
+								width="160"  snapInterval="20" labels="[差,较差,中,较好,好,绝佳]"/>
+				</mx:FormItem>
+				<mx:FormItem label="主要经济支柱">	
+					<s:TextArea>
+						
+					</s:TextArea>
+				</mx:FormItem>
+			</s:VGroup>
+		</s:NavigatorContent>
+		
+		<s:NavigatorContent label="商圈环境">
+			
+			<s:VGroup>
+				<mx:FormItem label="消费能力">	
+					<mx:HSlider maximum="100" minimum="10"
+								width="480"  snapInterval="10" labels="[10分,20分,30分,40分,50分,60分,70分,80分,90分,100分]"/>					
+				</mx:FormItem>
+				
+				<mx:FormItem label="消费者构成">	
+				</mx:FormItem>
+				<mx:FormItem label="消费动机">	
+				</mx:FormItem>
+				<mx:FormItem label="销售季节和营业时段">
+				</mx:FormItem>
+				<mx:FormItem label="消费偏好">	
+					<s:TextArea>
+						
+					</s:TextArea>
+				</mx:FormItem>
+			</s:VGroup>
+		</s:NavigatorContent>
+		
+	</mx:TabNavigator>
+	
+	
+</mx:Form>
