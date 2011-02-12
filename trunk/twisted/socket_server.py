@@ -122,7 +122,7 @@ if __name__ == '__main__':
     #host = '135.32.89.104'
     host = '127.0.0.1'
     #host = '192.168.1.4'
-    app_port = 8000
+    app_port = 8002
 
     print "Running Socket AMF gateway on %s:%s" % (host, app_port)
 
