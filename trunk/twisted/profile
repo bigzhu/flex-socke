@@ -1,0 +1,114 @@
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
+
+# the default umask is set in /etc/profile; for setting the umask
+# for ssh logins, install and configure the libpam-umask package.
+#umask 022
+
+# if running bash
+#if [ -n "$BASH_VERSION" ]; then
+#    # include .bashrc if it exists
+#    if [ -f "$HOME/.bashrc" ]; then
+#	. "$HOME/.bashrc"
+#    fi
+#fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+#apt-fast
+alias apt-get='apt-fast'
+#tibs
+export TIBS_HOME="/home/bigzhu/tibs_bill"
+#java
+export JAVA_HOME="/usr/lib/jvm/java-1.6.0-openjdk/jre";
+#数据库
+#export ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server; export ORACLE_HOME;
+#export ORACLE_HOME=/home/bigzhu/app
+#export LIBPATH=$ORACLE_HOME/lib:$LIBPATH; 
+#export PATH=.:$ORACLE_HOME/bin:$PATH;
+#export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH;
+#export SHLIB_PATH=$ORACLE_HOME/lib:$SHLIB_PATH;
+#export ORACLE_SID=bigzhu
+#export ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
+export ORACLE_HOME=/home/bigzhu/oracle/xe/app/oracle/product/10.2.0/server
+#export ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
+export TNS_ADMIN=$ORACLE_HOME/network/admin
+PATH=$PATH:$ORACLE_HOME/bin
+export ORACLE_SID=XE
+export PATH
+#tuxedo
+TUXDIR=/home/bigzhu/program/bea/tuxedo10gR3; export TUXDIR;
+PATH=$TUXDIR/bin:$PATH; export PATH;
+
+APP_DIR=/home/bigzhu/im/bin; export APP_DIR;
+
+APP_HOME=/home/bigzhu/tibs_bill; export APP_HOME;
+export IM_HOME=/home/bigzhu/im;
+TUXCONFIG=$APP_DIR/tuxconfig; export TUXCONFIG;
+export BDMCONFIG=$APP_DIR/bdmconfig
+
+LIBPATH=$TUXDIR/lib:$LIBPATH; export LIBPATH;
+export WSNADDR=//127.0.0.1:7136; 
+export LD_LIBRARY_PATH="$TUXDIR/lib:$LD_LIBRARY_PATH";
+PATH=$TUXDIR/bin:$PATH;export PATH;
+
+#Set FML32 Table Env
+export FLDTBLDIR32=$IM_HOME/src/include
+export FIELDTBLS32=ImFml
+#weblogic
+#export WEBLOGIC_HOME="/home/bigzhu/program/bea/wlserver_10.0/server"
+#export CLASSPATH=$WEBLOGIC_HOME/lib/weblogic.jar:/usr/share/ant/lib/:$LIBPATH; 
+#export PATH=.:$WEBLOGIC_HOME/bin:$PATH;
+
+CLASSPATH=/home/bigzhu/workspace/webapp/invoice/WEB-INF/lib/weblogic.jar:/usr/share/java/ant.jar:$CLASSPATH;export CLASSPATH;
+export JAVA_HOME="/usr/lib/jvm/java-1.6.0-openjdk";
+PATH=$JAVA_HOME/bin:$PATH;export PATH;
+
+PATH=/home/bigzhu/Dropbox/shell/:$PATH;export PATH;
+PATH=/home/bigzhu/Dropbox/python/:$PATH;export PATH;
+#运行开机启动项目
+#checkgmail
+#sn=`ps -ef | grep checkgmail | grep -v grep |awk '{print $2}'`
+#if [ "${sn}" = "" ]
+#	then
+#        	checkgmail&
+#fi
+#virtualbox
+#sn=`ps -ef | grep VirtualBox | grep -v grep |awk '{print $2}'`
+#if [ "${sn}" = "" ]
+#	then
+#		sudo /etc/init.d/vboxdrv restart &
+#fi
+#
+#sudo /etc/init.d/vboxdrv restart &
+#生成core
+ulimit -c unlimited
+#
+export AXIS2_HOME="/home/bigzhu/program/axis2-1.5.1"
+export SALTCONFIG=$IM_HOME/bin/IM.scg
+#数据库客户端
+export NLS_LANG="Simplified Chinese_china".ZHS16GBK
+#vi方式
+set -o vi
+export PYTHONPATH="$IM_HOME/src/twisted"
+#gvim的警告
+export LANG=zh_CN.UTF-8
+export PATH=.:/home/bigzhu/program/google_appengine:$PATH;
+
+export LANGUAGE="en"
+#gcin
+export GTK_IM_MODULE=gcin
+export XMODIFIERS=@im=gcin
+export QT_IM_MODULE=gcin
+
+#flex
+export IM="/home/bigzhu/Dropbox/src/im/src/twisted/"
+
+
+

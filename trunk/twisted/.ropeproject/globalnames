@@ -1,0 +1,22 @@
+Ä}q(Ucollect_taxq]q(U
+collectTaxqUgetOperTypeqUpartCollectqU
+allCollectqUaddZeroqUoracleq	Utest_collectTaxq
+eUbss_orgq]q(U	hasChrildqUBssOrgStaffqU	delBssOrgqUgetBssOrgIDqUtest_getBssOrgStaffqUtest_hasChrildqUtest_changeBssOrgqUgetBssOrgStaffqUtest_addBssOrgqU	addBssOrgqUchangeBssOrgqUtest_delBssOrgqUtest_getBssOrgIDqUhasStaffqh	eUuse_taxq]q(UUseTaxqh	UuseTaxqUtest_useTaxqeUstaffq ]q!(U	bondStaffq"UunbondStaffq#U
+loginStaffq$Uresultq%UgetStaffq&UaddStaffq'Utest_changeStaffq(Utest_getRealStaffIDq)U
+getStaffIDq*UdelStaffq+UgetRealStaffIDq,UchangeStaffq-Utest_unboundStaffq.Utest_boundStaffq/Utest_delStaffq0Utest_loginStaffq1U
+upperLevelq2Utest_getStaffIDq3h	eUabstract_taxq4]q5(U
+addDistritq6Utest_poolToReverseq7Utest_abstractTaxq8h	UabstractTaxq9UpoolToAbstractq:eUupdate_acct_idq;]q<(UupdateNeedUpdateq=UmainNeedUpdateq>UupdateUpdateCountq?Uidq@UgetUpdateInfoqAUgetNeedUpdateInfoqBUthqCUupdateNeedTableqDUgetNeedUpdateqEUiU	partitionqFU
+table_nameqGh	eUroleqH]qI(UdelRolePrivilegeqJUtest_delRoleqKU
+modifyRoleqLUaddRolePrivilegeqMUtest_delRolePrivilegeqNh	UdelRoleqOUtest_addRoleqPUaddRoleqQUtest_addRolePrivilegeqReUpoolqS]qT(U
+selectPoolqUUaddNoteqVU
+updatePoolqWU
+getNextValqXUtest_updatePoolqYeU
+distri_taxqZ]q[(h	U	allDistriq\Utest_distriTaxq]U
+partDistriq^U	distriTaxq_eUdistriq`]qa(UcheckBeginEndNbrqbU	addDistriqcUgetDistriInfoqdUinsertDistriLogqeUtest_checkIfExistqfUtest_getStaffIdqgh	hXU
+getStaffIdqhUtest_addDistriqiUinsertDistriAsSplitqjUcheckIfExistqkh_eUroll_taxql]qm(Utest_rollTaxqnUrollqoeUinstance_taxqp]qq(Utest_instanceTaxqrh	UinstanceTaxqsUallInstanceqteUhandqu]qv(Utest_oracleqwU	handPrintqxUHandqyUtestHandPrintqzeU
+staff_roleq{]q|(UdelStaffRoleq}Utest_delStaffRoleq~h	UaddStaffRoleqUtest_addStaffRoleqÄeUnullify_taxqÅ]qÇ(U
+nullifyTaxqÉU
+addPoolLogqÑUtest_nullifyTaxqÖUtest_getPoolIdqÜU	getPoolIdqáUupdateToNullifyqàUtestGetPoolIdqâeUadjustqä]qã(UcheckIsInstanceqåU
+adjust_logqçUadjustErrorqéUtest_adjustErrorqèeUexpqê]që(U
+getExcInfoqíUtest_getWarningInfoqìUWarning_qîUgetWarningInfoqïUtest_getExcInfoqñeUnullify_distriqó]qò(UaddDistriLogqôUnullifyDistriqöhàUtest_nullifyDistriqõeUoracleqú]qù(Utest2_OracleqûUtest_kill_sessionqüUOracleq†eU
+select_qryq°]q¢(Utest_selectq£Uselectq§eUretailq•]q¶(hUdelOrgqßUgetOrgq®UaddOrgq©UchangeRetailq™Utest_getOrgq´UgetOrgIDq¨Utest_getRetailInfoq≠hUgetRetailInfoqÆUtest_addOrgqØUtest_getOrgIDq∞h	eU	im_serverq±]q≤(Udicq≥UServerq¥URetailqµUserverq∂eu.
